@@ -1,8 +1,7 @@
 
 # Git commands to be successful in life
 
-Step 1
-### Getting & Creating Projects
+### Quick steps for creating README.md file in a new repository
 
 Create a local repository and initialise it using `git init`
 Create a remote repository and clone it to move it to local and initialised at the same time.
@@ -12,6 +11,9 @@ Commit the file to master put a description
 Configure the push destination with `git remote add origin`
 Set the upstream branch for current master and push with `git push --set-upstream origin master`
 
+
+Step 1
+### Getting & Creating Projects
 
 | Command | Description |
 | ------- | ----------- |
