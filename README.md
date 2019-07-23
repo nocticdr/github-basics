@@ -1,16 +1,16 @@
-# Learning Terraform on my own
 
-# A few more git commands to remember
+# Git commands to be successful in life
 
 Step 1
 ### Getting & Creating Projects
 
-Create a local repository and initialise it to make it a .git
+Create a local repository and initialise it using git init
+Create a remote repository and clone it to move it to local and initialised at the same time.
 
 | Command | Description |
 | ------- | ----------- |
 | `git init` | Initialize a local Git repository |
-| `git clone https://git@github.com/[username]/[repository-name].git` | Create a local copy of a remote repository |
+| `git clone https://github.com/[username]/[repository-name].git` | Create a local copy of a remote repository |
 
 Step 2
 ### Basic Commands
@@ -54,8 +54,8 @@ Step 2
 | `git push origin --delete [branch name]` | Delete a remote branch |
 | `git pull` | Update local repository to the newest commit |
 | `git pull origin [branch name]` | Pull changes from remote repository |
-| `git remote add origin https://git@github.com/[username]/[repository-name].git` | Add a remote repository |
-| `git remote set-url origin https://git@github.com/[username]/[repository-name].git` | Set a repository's origin branch to SSH |
+| `git remote add origin https://github.com/[username]/[repository-name].git` | Add a remote repository |
+| `git remote set-url origin https://github.com/[username]/[repository-name].git` | Set a repository's origin branch to SSH |
 
 ### Inspection & Comparison
 
