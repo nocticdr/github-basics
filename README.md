@@ -4,8 +4,14 @@
 Step 1
 ### Getting & Creating Projects
 
-Create a local repository and initialise it using git init
+Create a local repository and initialise it using `git init`
 Create a remote repository and clone it to move it to local and initialised at the same time.
+Create a readme file, fill it in and save it.
+Add it to staging with `git add .`
+Commit the file to master put a description
+Configure the push destination with `git remote add origin`
+Set the upstream branch for current master and push with `git push --set-upstream origin master`
+
 
 | Command | Description |
 | ------- | ----------- |
