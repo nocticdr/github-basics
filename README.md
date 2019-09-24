@@ -98,21 +98,4 @@ Step 2
 | `git remote rm origin` | Remote origin in case of "fatal: remote origin already exists." |
 | `git remote show origin` | View local and remote status |
 
-
-### Azure Basics
-
-| Command | Description |
-| ------- | ----------- |
-| `az account list` | Show the subscriptions |
-| `az account set --subscription "01. QL Enterprise Apps"` | Set the default subscription |
-| `az group create --name tf-test --location AustraliaEast` | Create an Azure Resource Group named tf-test and location AustraliaEast |
-
-### Packer Basics
-
-| Command | Description |
-| ------- | ----------- |
-| `cd packer` | Change directory to Packer |
-| `packer build azure-windows.json"` | Build based on the packer template |
-
- 
  
