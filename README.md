@@ -11,16 +11,26 @@ Commit the file to master put a description
 Configure the push destination with `git remote add origin`
 Set the upstream branch for current master and push with `git push --set-upstream origin master`
 
-config --global --unset ked.mardemootoo@gmail.com
-git config --global user.email ked.mardemootoo@gmail.com
-git config --global user.name nocticdr
-git config --list
-git commit --amend --reset-author
 
-Make changes
-git add .
-git commit -m "text"
-git push
+| Command | Description |
+| ------- | ----------- |
+| `config --global --unset ked.mardemootoo@gmail.com` | unset email ID |
+| `git config --global user.name nocticdr` | Set user name |
+| `git config --global user.email ked.mardemootoo@gmail.com` | Set user email address |
+| `git config --list` | Check user account configured |
+| `git commit --amend --reset-author` | Reset registered author |
+| `q` | Quit VIM |
+
+### Making, saving and committing changes
+| Command | Description |
+| ------- | ----------- |
+| `git add .` | Add a file to the staging area |
+| `git add .` | Add a file to the staging area |
+| `git commit -m "text"` | Commit changes with remark text |
+| `git push` | Push changes to remote repository |
+
+
+
 
 
 Step 1
@@ -75,6 +85,7 @@ Step 2
 | `git pull origin [branch name]` | Pull changes from remote repository |
 | `git remote add origin https://github.com/[username]/[repository-name].git` | Add a remote repository |
 | `git remote set-url origin https://github.com/[username]/[repository-name].git` | Set a repository's origin branch to SSH |
+| `git push --set-upstream origin master ` | Set the upstream branch for master. Create repository on GitHub first. |
 
 ### Inspection & Comparison
 
@@ -83,11 +94,25 @@ Step 2
 | `git log` | View changes |
 | `git log --summary` | View changes (detailed) |
 | `git diff [source branch] [target branch]` | Preview changes before merging |
-git remote -v
+| `git remote -v` | View origin fetch and push URLs |
+| `git remote rm origin` | Remote origin in case of "fatal: remote origin already exists." |
+| `git remote show origin` | View local and remote status |
 
-az account list
-az account set --subscription "01. QL Enterprise Apps" 
-cd packer
-packer build azure-windows.json
-Build 'azure-arm' errored: Cannot locate the managed image resource group tf-test.
-az group create --name tf-test --location AustraliaEast 
+
+### Azure Basics
+
+| Command | Description |
+| ------- | ----------- |
+| `az account list` | Show the subscriptions |
+| `az account set --subscription "01. QL Enterprise Apps"` | Set the default subscription |
+| `az group create --name tf-test --location AustraliaEast` | Create an Azure Resource Group named tf-test and location AustraliaEast |
+
+### Packer Basics
+
+| Command | Description |
+| ------- | ----------- |
+| `cd packer` | Change directory to Packer |
+| `packer build azure-windows.json"` | Build based on the packer template |
+
+ 
+ 
