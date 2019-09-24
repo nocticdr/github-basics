@@ -11,6 +11,17 @@ Commit the file to master put a description
 Configure the push destination with `git remote add origin`
 Set the upstream branch for current master and push with `git push --set-upstream origin master`
 
+config --global --unset ked.mardemootoo@gmail.com
+git config --global user.email ked.mardemootoo@gmail.com
+git config --global user.name nocticdr
+git config --list
+git commit --amend --reset-author
+
+Make changes
+git add .
+git commit -m "text"
+git push
+
 
 Step 1
 ### Getting & Creating Projects
@@ -72,3 +83,11 @@ Step 2
 | `git log` | View changes |
 | `git log --summary` | View changes (detailed) |
 | `git diff [source branch] [target branch]` | Preview changes before merging |
+git remote -v
+
+az account list
+az account set --subscription "01. QL Enterprise Apps" 
+cd packer
+packer build azure-windows.json
+Build 'azure-arm' errored: Cannot locate the managed image resource group tf-test.
+az group create --name tf-test --location AustraliaEast 
